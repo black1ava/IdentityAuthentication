@@ -1,0 +1,21 @@
+@model SigninModel
+<div class="card">
+  <div class="card-body">
+    <div class="card-header">
+      <h3>Login</h3>
+    </div>
+    <form asp-controller="Account" asp-action="Login">
+      <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary">Sign In</button>
+      </div>
+    </form>
+  </div>
+</div>
